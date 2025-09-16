@@ -1,0 +1,22 @@
+.login-form {
+  max-width: 300px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 8px;
+  font-size: 14px;
+}
+
+button {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}

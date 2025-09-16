@@ -1,0 +1,27 @@
+# -----------------
+# Spring Boot (backend)
+# -----------------
+/backend/UserTaskManager/target/
+/backend/UserTaskManager/.idea/
+/backend/UserTaskManager/*.iml
+/backend/UserTaskManager/.classpath
+/backend/UserTaskManager/.project
+/backend/UserTaskManager/.settings/
+/backend/UserTaskManager/out/
+/backend/UserTaskManager/logs/
+/backend/UserTaskManager/*.log
+
+# -----------------
+# Angular (frontend)
+# -----------------
+/frontend/task-manager-frontend/node_modules/
+/frontend/task-manager-frontend/dist/
+/frontend/task-manager-frontend/out-tsc/
+/frontend/task-manager-frontend/.angular/
+/frontend/task-manager-frontend/.vscode/
+
+# -----------------
+# OS files
+# -----------------
+.DS_Store
+Thumbs.db

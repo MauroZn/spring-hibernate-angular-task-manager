@@ -1,0 +1,59 @@
+<h1>Task Management System</h1>
+
+<div class="task-form">
+  <h2>Create Task</h2>
+  <form (ngSubmit)="createTask()">
+    <input type="text" placeholder="Title" [(ngModel)]="newTask.title" name="title" required />
+    <input type="text" placeholder="Description" [(ngModel)]="newTask.description" name="description" required />
+    <select [(ngModel)]="newTask.status" name="status" required>
+      <option *ngFor="let s of taskStatuses" [value]="s">{{ s }}</option>
+    </select>
+    <button type="submit">Add Task</button>
+  </form>
+</div>
+
+<hr>
+
+<div class="task-board">
+  <div class="column">
+    <h3>Pending</h3>
+    <div *ngFor="let task of getTasksByStatus('PENDING')" class="task-card">
+      <h4>{{ task.title }}</h4>
+      <p>{{ task.description }}</p>
+      <div class="task-actions">
+        <select [(ngModel)]="task.status" (change)="updateTask(task)">
+          <option *ngFor="let s of taskStatuses" [value]="s">{{ s }}</option>
+        </select>
+        <button (click)="confirmDelete(task)">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <h3>In Progress</h3>
+    <div *ngFor="let task of getTasksByStatus('IN_PROGRESS')" class="task-card">
+      <h4>{{ task.title }}</h4>
+      <p>{{ task.description }}</p>
+      <div class="task-actions">
+        <select [(ngModel)]="task.status" (change)="updateTask(task)">
+          <option *ngFor="let s of taskStatuses" [value]="s">{{ s }}</option>
+        </select>
+        <button (click)="confirmDelete(task)">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <h3>Done</h3>
+    <div *ngFor="let task of getTasksByStatus('DONE')" class="task-card">
+      <h4>{{ task.title }}</h4>
+      <p>{{ task.description }}</p>
+      <div class="task-actions">
+        <select [(ngModel)]="task.status" (change)="updateTask(task)">
+          <option *ngFor="let s of taskStatuses" [value]="s">{{ s }}</option>
+        </select>
+        <button (click)="confirmDelete(task)">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
