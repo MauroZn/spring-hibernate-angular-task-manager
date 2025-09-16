@@ -2,8 +2,8 @@
 # Spring Boot (backend)
 # -----------------
 /backend/UserTaskManager/target/
-/backend/UserTaskManager/.idea/
-/backend/UserTaskManager/*.iml
+/.idea/
+/*.iml
 /backend/UserTaskManager/.classpath
 /backend/UserTaskManager/.project
 /backend/UserTaskManager/.settings/
