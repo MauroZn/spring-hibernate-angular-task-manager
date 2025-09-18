@@ -24,9 +24,8 @@ The backend handles authentication with JWT tokens, manages data persistence wit
 
 > [!NOTE]
 > TO-DO LIST:
-> - If an User is not Logged in and moves into /tasks, he must be redirected to the /login page. (And not to an empty tasks page like now)
-> - Properly add PostgreSQL DB and not local one anymore.
-> - Check Security and be sure there are no possible ways to do a SQL Injection.
+> - Redirect NOT logged User to Login Page from the Tasks Page
 > - Improve Front-end esthetically
-> - Host the full website (Must choose if Frontend and Backend on the same host or separate in two different hosts)
-> - Learn where and how to store Environment Variables (For the PostgreSQL DB) to use them when the project will be hosted (Right now they are only in my local IDE Env Variables but they are not used)
+> - Add PostgreSQL DB and remove the local Hibernate one.
+> - Learn how to properly store Environment Variables (For the PostgreSQL DB) and not inside the IDE anymore.
+> - Host the full website (Frontend and Backend on the same host / separate in two different hosts)
