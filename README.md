@@ -27,5 +27,4 @@ The backend handles authentication with JWT tokens, manages data persistence wit
 > - Redirect NOT logged User to Login Page from the Tasks Page
 > - Improve Front-end esthetically
 > - Add PostgreSQL DB and remove the local Hibernate one.
-> - Learn how to properly store Environment Variables (For the PostgreSQL DB) and not inside the IDE anymore.
 > - Host the full website (Frontend and Backend on the same host / separate in two different hosts)
